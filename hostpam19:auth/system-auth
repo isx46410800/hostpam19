@@ -2,7 +2,7 @@
 # This file is auto-generated.
 # User changes will be destroyed the next time authconfig is run.
 auth        required      pam_env.so
-auth        optional      pam_mount.so
+auth        required      pam_mount.so
 auth        sufficient    pam_unix.so try_first_pass nullok
 auth	    sufficient	  pam_ldap.so
 auth        required      pam_deny.so
