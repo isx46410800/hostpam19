@@ -1,0 +1,4 @@
+#%CHFN MIGUEL
+auth [default=1 success=ignore] pam_succeed_if.so debug uid = 1001
+auth sufficient pam_permit.so
+auth requisite pam_deny.so

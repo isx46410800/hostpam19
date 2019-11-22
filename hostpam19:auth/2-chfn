@@ -1,0 +1,6 @@
+#%PAM-1.0
+auth 	    substack	 chfn-miguel
+auth	    optional	 pam_echo.so [ esto pasa con substack ]
+account     sufficient   pam_permit.so
+#password   include      system-auth
+#session    include      system-auth
