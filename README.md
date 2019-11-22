@@ -1,6 +1,9 @@
 # hostpam19
-##base
+## base
 configuracion normal de PAM
 
-##auth
+## auth
 configuracion para conectarse PAM con LDAP autenticando los usuarios
+
+## scratch
+configuracion from scratch utilitzando un authconfig de ldap, con creacion homeDir auto. conectar así con LDAP:group 
