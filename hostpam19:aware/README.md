@@ -25,7 +25,12 @@ Usuari: kaka
 Passwd: kaka
 ```
 
-## Implementamos el modulo pam_mates.py
+## Hacemos el  modulo pam_mates.py
+## Compilamos para hacer el pam_python.so
+tar -xvzf pam-python-1.0.7.tar.gz
+dnf install -y sphinx python3-sphinx python2-sphinx gcc
+dnf -y install pam-devel
+dnf -y install python-devel
 
 ## Comprobamos que nos haga la pregunta matematica para el chfn
 
