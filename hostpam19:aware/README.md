@@ -31,6 +31,15 @@ tar -xvzf pam-python-1.0.7.tar.gz
 dnf install -y sphinx python3-sphinx python2-sphinx gcc
 dnf -y install pam-devel
 dnf -y install python-devel
+cambiamos la linea 201 de /usr/include/features.h
+make
+```
+[isx46410800@i05 hostpam19:aware]$ ll /tmp/mozilla_isx464108000/pam-python-1.0.7/src/pam_python.so
+lrwxrwxrwx. 1 isx46410800 hisx2    40 Nov 28 11:47 /tmp/mozilla_isx464108000/pam-python-1.0.7/src/pam_python.so -> build/lib.linux-x86_64-2.7/pam_python.so
+```
+cp pam_python.so /usr/lib64/security/.
+
+## Tornem a construir la imatge
 
 ## Comprobamos que nos haga la pregunta matematica para el chfn
 
