@@ -39,7 +39,7 @@ lrwxrwxrwx. 1 isx46410800 hisx2    40 Nov 28 11:47 /tmp/mozilla_isx464108000/pam
 ```
 cp pam_python.so /usr/lib64/security/.
 
-## Tornem a construir la imatge
+## Tornem a construir la imatge con el chfn nuevo y copiando el python.so en el dir de los modulos /usr/lib64/security/.
 
 ## Comprobamos que nos haga la pregunta matematica para el chfn
 
