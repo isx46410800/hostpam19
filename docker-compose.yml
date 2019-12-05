@@ -1,0 +1,32 @@
+version: "2"
+services:
+  ldap:
+    image: isx46410800/ldapserver19:group
+    container_name: ldapserver
+    hostname: ldapserver
+    ports: 
+      - "389:389"
+    networks:
+     - mynet
+  samba:
+    image: isx46410800/samba19:pam
+    container_name: samba
+    hostname: samba
+    volumes:
+      - "homes:/tmp/home"
+    ports:
+      - "139:139"
+      - "445:445"
+    networks:
+     - mynet
+  pam:
+    image: isx46410800/hostpam19:samba
+    container_name: pam
+    hostname: pam
+    networks:
+     - mynet
+    privileged: true
+networks:
+  mynet:
+volumes:
+  homes:
